@@ -4,10 +4,9 @@
 :: converts templates to generators
 ::
 
-set _cli=.\DTOMaker.CLI\bin\debug\net8.0\DTOMaker.CLI.exe
+set _cli=dtomaker
 
 call :t2g MemBlocks
-call :t2g MessagePack
 
 goto :eof
 

@@ -7,8 +7,8 @@
 		<WarningsAsErrors>nullable</WarningsAsErrors>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageProjectUrl>https://github.com/datafac/dtomaker-core</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/datafac/dtomaker-core</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/datafac/dtomaker-memblocks-cs</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/datafac/dtomaker-memblocks-cs</RepositoryUrl>
 		<Company>DataFac</Company>
 		<Product>DTOMaker</Product>
 		<Authors>DataFac Contributors</Authors>
@@ -31,6 +31,7 @@
 	<ItemGroup>
 		<PackageReference Include="DataFac.Memory" Version="0.15.2" />
 		<PackageReference Include="DataFac.Storage" Version="1.0.4" />
+		<PackageReference Include="DTOMaker.Runtime" Version="0.71.3" />
 		<PackageReference Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115">
 			<PrivateAssets>all</PrivateAssets>
@@ -38,10 +39,6 @@
 		</PackageReference>
 		<PackageReference Include="System.Memory" Version="4.6.3" />
 		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.6.3" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\DTOMaker.Runtime\DTOMaker.Runtime.csproj" />
 	</ItemGroup>
 
 	<Import Project="..\DTOMaker.MemBlocks.Shared\DTOMaker.MemBlocks.Shared.projitems" Label="Shared" />
